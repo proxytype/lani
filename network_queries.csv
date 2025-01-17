@@ -1,0 +1,18 @@
+query,response,class
+What is the status of device <IP_ADDRESS>?,As of my latest scan on <SCAN_DATE>, the status of <IP_ADDRESS> is currently <STATUS>.,status
+Show me the bandwidth usage.,"Bytes sent: <BYTES_SENT>, Bytes received: <BYTES_RECEIVED>", bandwidth
+What is the bandwidth,"Bytes sent: <BYTES_SENT>, Bytes received: <BYTES_RECEIVED>", bandwidth
+Show me the supported ports scan, Sure! here are the supported ports i scanned <SUPPORTED_PORTS>, ports
+What ports you support, My scanning ports are: <SUPPORTED_PORTS>, ports
+what is your supported ports, My scanning ports are: <SUPPORTED_PORTS>, ports
+What is your version, My version is <AGENT_VERSION>, agent_version
+Who is your creator, My creator is Rudenet, you can visit they website https://rudenetworks.com, agent_creator
+Who create you, My creator is Rudenet, you can visit they website https://rudenetworks.com, agent_creator
+What devices are on the network?,Scanning the network for devices...,status
+List all online devices.,Here are the online devices: <DEVICES_LIST>,devices
+Show list of device.,Here are the online devices: <DEVICES_LIST>,devices
+Are there any unauthorized open ports?,Scanning for unauthorized open ports...,ports
+Capture traffic on the network.,Capturing network traffic...,bandwidth
+Check services running on <IP_ADDRESS>.,Checking services on device <IP_ADDRESS>...,ports
+How much traffic is being sent?,"Bytes sent: <BYTES_SENT>, Bytes received: <BYTES_RECEIVED>",bandwidth
+Scan ports for <IP_ADDRESS>, start scanning ports, i will let you know when i finish, ports_scan
