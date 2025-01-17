@@ -17,5 +17,6 @@ Lani dynamically extracts these values from your queries and injects them into r
 - [ ] Create Actions<br>
     - Device<br>
     - Port<br>
+- [ ] Web Service
 - [ ] More Queries...
 - [X] Add Bert?
