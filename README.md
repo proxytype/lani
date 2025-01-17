@@ -1,4 +1,4 @@
-<h1>Lani</h1> 
+<h1>L.A.N.I</h1> 
 <b>Your AI-Powered Network Intelligence Assistant</b>
 
 Lani is an advanced AI-driven network assistant designed to help you monitor, analyze, and secure your network effortlessly.<br>
