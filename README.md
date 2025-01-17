@@ -9,7 +9,6 @@ It leverages a Named Entity Recognition (NER) algorithm to analyze user queries 
 
 Additionally, Lani dynamically injects values into response placeholders, ensuring accurate and context-aware information.
 
-[ ] Release Code <br>
 [ ] More Complex Tasks<br>
 [ ] Create Actions<br>
-[ ] More Training...
+[ ] More Queries...
