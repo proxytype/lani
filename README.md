@@ -18,4 +18,4 @@ Additionally, Lani dynamically injects values into response placeholders, ensuri
     - Device<br>
     - Port<br>
 - [ ] More Queries...
-- [ ] Add Bert?
+- [X] Add Bert?
