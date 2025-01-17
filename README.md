@@ -10,5 +10,11 @@ It leverages a Named Entity Recognition (NER) algorithm to analyze user queries 
 Additionally, Lani dynamically injects values into response placeholders, ensuring accurate and context-aware information.
 
 [ ] More Complex Tasks<br>
+    - Ports Scan
+    - Dig
+    - Traceroute
+    = Ping
 [ ] Create Actions<br>
+    - Device
+    - Port
 [ ] More Queries...
