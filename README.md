@@ -21,3 +21,4 @@ Lani dynamically extracts these values from your queries and injects them into r
 - [ ] More Queries...
 - [X] Add Bert?
 - [X] Create Model
+- [ ] Gradio UI
