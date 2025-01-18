@@ -20,4 +20,4 @@ Lani dynamically extracts these values from your queries and injects them into r
 - [ ] Web Service
 - [ ] More Queries...
 - [X] Add Bert?
-- [ ] Create Model
+- [X] Create Model
