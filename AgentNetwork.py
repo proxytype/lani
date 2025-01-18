@@ -23,7 +23,6 @@ class AgentNetworkAI:
         self.bert_model = BertModel.from_pretrained("bert-base-uncased").to(self.device)
         self.model = BertForTokenClassification.from_pretrained("dbmdz/bert-large-cased-finetuned-conll03-english")
         self.nlp = pipeline("ner", model=self.model, tokenizer=self.tokenizer)
-        #self.embeddings, self.responses, self.classes = self.prepare_embeddings()
         self.embeddings, self.responses, self.classes = self.load_trained_model("lani_model.pth")
 
     def load_trained_model(self, model_path):
@@ -48,19 +47,6 @@ class AgentNetworkAI:
         with torch.no_grad():
             outputs = self.bert_model(**inputs)
         return outputs.last_hidden_state.mean(dim=1).squeeze()
-
-
-    def prepare_embeddings(self):
-        """Generate embeddings for all queries in the dataset using BERT."""
-        embeddings = []
-        responses = []
-        classes = []
-        for query, response, cls in self.query_response_dataset:
-            embedding = self.encode_query(query).unsqueeze(0).to(self.device)
-            embeddings.append(embedding)
-            responses.append(response)
-            classes.append(cls)
-        return torch.cat(embeddings).to(self.device), responses, classes
 
     def analyze_user_query(self, query, devices):
         """Analyze the user's query and return an appropriate response."""
