@@ -1,5 +1,5 @@
-from WorkerNetwork import WorkerNMAP
-from AgentNetwork import AgentNetworkAI
+from Nmap.WorkerNetwork import WorkerNMAP
+from Agent.AgentNetwork import AgentNetworkAI
 import time
 
 VERSION = "1.0"
