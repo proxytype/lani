@@ -1,7 +1,7 @@
 <h1>L.A.N.I</h1> 
 <b>Your AI-Powered Network Intelligence Assistant</b>
 
-![lani](https://raw.githubusercontent.com/proxytype/lani/refs/heads/main/lani-2.png)
+![lani](https://raw.githubusercontent.com/proxytype/lani/refs/heads/main/lani-2.PNG)
 
 Lani is an advanced AI-driven network assistant designed to help you monitor, analyze, and secure your network effortlessly. Whether you need real-time device status updates, bandwidth monitoring, open port detection, or live traffic analysis, Lani provides precise and actionable insights.
 
