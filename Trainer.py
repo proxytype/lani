@@ -3,7 +3,7 @@ from transformers import BertTokenizer, BertModel
 import csv
 
 class LaniTrainer:
-    def __init__(self, dataset_path="network_queries.csv", model_path="lani_model.pth"):
+    def __init__(self, dataset_path="DataSet/network_queries.csv", model_path="Model/lani_model.pth"):
         self.dataset_path = dataset_path
         self.model_path = model_path
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

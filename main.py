@@ -1,8 +1,11 @@
+import warnings
+
 from Nmap.WorkerNetwork import WorkerNMAP
 from Agent.AgentNetwork import AgentNetworkAI
 import time
 
-VERSION = "1.0"
+VERSION = "0.2"
+
 
 if __name__ == "__main__":
     worker = WorkerNMAP()

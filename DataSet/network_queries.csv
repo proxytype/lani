@@ -10,9 +10,29 @@ Who is your creator, My creator is Rudenet, you can visit they website https://r
 Who create you, My creator is Rudenet, you can visit they website https://rudenetworks.com, agent_creator
 What devices are on the network?,Scanning the network for devices...,status
 List all online devices.,Here are the online devices: <DEVICES_LIST>,devices
+show me online devices,Here are the online devices: <DEVICES_LIST>,devices
 Show list of device.,Here are the online devices: <DEVICES_LIST>,devices
 Are there any unauthorized open ports?,Scanning for unauthorized open ports...,ports
 Capture traffic on the network.,Capturing network traffic...,bandwidth
 Check services running on <IP_ADDRESS>.,Checking services on device <IP_ADDRESS>...,ports
 How much traffic is being sent?,"Bytes sent: <BYTES_SENT>, Bytes received: <BYTES_RECEIVED>",bandwidth
 Scan ports for <IP_ADDRESS>, start scanning ports, i will let you know when i finish, ports_scan
+let me know if new device connected to the network, sure! i will notify you when new device added to the network, notify_new_device
+Let me know if a new device connects to the network,Sure! I will notify you when a new device is added to the network., notify_new_device
+Can you detect new devices joining my network,Yes! I will notify you whenever a new device connects., notify_new_device
+How do I know if an unknown device is on my network,I will monitor your network and notify you when a new device appears., notify_new_device
+Can you confirm if a new device was recently connected,Yes! I can provide a list of recently connected devices., notify_new_device
+Where can I check the list of new devices,You can access the device log to see all detected new connections., notify_new_device
+Can I get a timestamp for when a device joined the network,Yes! I will provide the exact time when a new device was detected., notify_new_device
+Can I receive alerts when a new device connects,Yes! I can send notifications via email, SMS, or push alerts., notify_new_device
+Can I set up alerts for specific device types,Yes! You can configure alerts based on MAC addresses or device names., notify_new_device
+Can you notify me only when unknown devices connect,Absolutely! I will only alert you when an unrecognized device joins., notify_new_device
+Can you please disable notifications for new devices,Yes, I disabled it right away., disable_notify_new_device
+Turn off new device alerts,Got it! I have turned off the notifications., disable_notify_new_device
+Disable notifications for new connections,Sure! I have disabled new device alerts., disable_notify_new_device
+Stop notifying me about new devices,Understood! You won’t receive alerts for new devices anymore., disable_notify_new_device
+Can you mute new device alerts,Yes! I have muted notifications for new devices., disable_notify_new_device
+Pause notifications for new devices,Done! I have paused new device alerts., disable_notify_new_device
+I don’t want to get notified about new devices,Okay! I won’t send alerts for new device connections., disable_notify_new_device
+Can I disable alerts for unknown devices,Yes, I have turned off notifications for unknown devices., disable_notify_new_device
+Stop sending me alerts about new devices,No problem! I have stopped those notifications for you., disable_notify_new_device

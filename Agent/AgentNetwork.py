@@ -1,18 +1,16 @@
 import csv
-import nmap
-import psutil
-import subprocess
-import json
-import time
-import threading
 import re
+import warnings
+
 import torch
 from torch.nn.functional import cosine_similarity
 from transformers import BertTokenizer, BertModel, BertForTokenClassification
 from transformers import pipeline
+
+from Agent.AgentAction import AgentActionAi
 from Agent.AgentPatterns import AgentPatternsAI
 
-
+warnings.filterwarnings("ignore", category=UserWarning)
 class AgentNetworkAI:
 
     def __init__(self, dataset = "DataSet/network_queries.csv"):
@@ -120,8 +118,23 @@ class AgentNetworkAI:
 
             if best_match_score > 0.5:  # Set a threshold for a good match
                 response_template = self.responses[best_match_idx]
+                selected_class = self.classes[best_match_idx]
                 dynamic_values = self.extract_dynamic_values(query)
                 response = patterns.inject_patterns(response_template, dynamic_values, devices)
+
+                self.action(self.classes[best_match_idx])
+
+                if selected_class == AgentActionAi.CLASS_ENABLE_NOTIFY_DEVICE:
+                    AgentActionAi.NOTIFY_NEW_DEVICE = True
+                elif selected_class == AgentActionAi.CLASS_DISABLE_NOTIFY_DEVICE:
+                    AgentActionAi.NOTIFY_NEW_DEVICE = False
+
                 return response
             else:
                 return "Sorry, I couldn't understand your query. Please try again."
+
+    def action(self, action_class):
+        if action_class == AgentActionAi.CLASS_ENABLE_NOTIFY_DEVICE:
+            AgentActionAi.NOTIFY_NEW_DEVICE = True
+        elif action_class == AgentActionAi.CLASS_DISABLE_NOTIFY_DEVICE:
+            AgentActionAi.NOTIFY_NEW_DEVICE = False
